@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Agni Holidays</title>
+  <meta name="description" content="The Agni Holidays — Luxury international tour packages: Thailand, Dubai, Bali, Visa Assistance, Hotel Booking." />
+  <style>
+    :root{--accent:#d35400;--muted:#6b7280;--bg:#0f1724;--card:#0b1220}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#e6eef8; background:linear-gradient(180deg,#071024 0%, #07182a 100%); -webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo-wrap{width:92px;height:92px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#111827 0%, rgba(255,255,255,0.02) 100%);border-radius:18px;padding:8px}
+    h1{font-size:20px;margin:0}
+    .subtitle{font-size:12px;color:var(--muted);margin-top:4px}
+    nav{display:flex;gap:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;margin-top:28px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:16px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .tagline{font-size:28px;margin:0 0 8px 0}
+    .tagline small{display:block;font-size:14px;color:var(--muted);margin-top:6px}
+    .cta-row{display:flex;gap:12px;margin-top:16px}
+    .primary{background:linear-gradient(90deg,var(--accent),#ff7a00);border:none;padding:12px 16px;border-radius:12px;color:#071024;font-weight:700;text-decoration:none}
+    .outline{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px 16px;border-radius:12px;color:inherit;text-decoration:none}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* small helpers */
+    .services li{margin:6px 0}
+    .logo-switch{display:flex;gap:8px}
+    .logo-btn{cursor:pointer;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent}
+
+    @media(min-width:760px){
+      .hero{grid-template-columns:1fr 360px}
+      .tagline{font-size:34px}
+    }
+
+    /* simple fade-in */
+    .fade{opacity:0;transform:translateY(6px);animation:fadeIn .6s forwards}
+    @keyframes fadeIn{to{opacity:1;transform:none}}
+
+    /* logo SVG sizing */
+    .logo-svg{width:84px;height:84px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade">
+      <div class="brand">
+        <div class="logo-wrap" id="logoPreview">
+          <!-- default logo (option 1 SVG) -->
+          <svg class="logo-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff7a00"/>
+                <stop offset="1" stop-color="#d35400"/>
+              </linearGradient>
+            </defs>
+            <rect rx="18" width="120" height="120" fill="url(#g1)" opacity="0.06"/>
+            <path d="M60 16c-6 8-18 12-24 22-6 10-2 24 8 34s28 10 38 0 14-24 6-36S72 14 60 16z" fill="url(#g1)"/>
+            <text x="50%" y="92%" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">AGNI</text>
+          </svg>
+        </div>
+        <div>
+          <h1>The Agni Holidays</h1>
+          <div class="subtitle">Luxury international tour packages • Delhi</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-card fade" style="animation-delay:.05s">
+        <h2 class="tagline" id="mainTag">Your gateway to extraordinary journeys</h2>
+        <small class="muted">Tailor-made packages: Thailand, Dubai, Bali — visa help & hotel bookings included.</small>
+
+        <div class="cta-row">
+          <a class="primary" id="whatsappBtn" href="https://wa.me/918595335136" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="outline" href="mailto:theagniholidays@gmail.com">Email Us</a>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3>Why choose The Agni Holidays?</h3>
+          <p class="muted">Personalized attention, curated itineraries, trusted hotel & flight partners, transparent pricing and 24/7 WhatsApp support.</p>
+        </div>
+
+        <div class="grid" style="margin-top:14px">
+          <div class="card">
+            <h3>Our top destinations</h3>
+            <ul class="muted services">
+              <li>Thailand Tour Packages</li>
+              <li>Dubai Tour Packages</li>
+              <li>Bali Tour Packages</li>
+              <li>Visa Assistance</li>
+              <li>Hotel Booking</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Quick info</h3>
+            <p class="muted">Based in Delhi — start your trip consultation via WhatsApp. We prepare fully detailed itineraries with costing and payment options.</p>
+            <p style="margin-top:8px"><strong>WhatsApp:</strong> +91 85953 35136<br><strong>Email:</strong> theagniholidays@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="fade" style="animation-delay:.1s">
+        <div class="card">
+          <h3>Logo options</h3>
+          <p class="muted">Two stylistic logo marks included — click to preview and download SVG.</p>
+
+          <div style="display:flex;gap:12px;align-items:center;margin-top:12px">
+            <button class="logo-btn" onclick="setLogo(1)">Option 1</button>
+            <button class="logo-btn" onclick="setLogo(2)">Option 2</button>
+            <div style="flex:1;text-align:right">
+              <a class="btn" id="downloadLogo" download="agni-logo.svg" href="#">Download SVG</a>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:8px 0">Suggested taglines</h4>
+            <ol class="muted">
+              <li id="t1">Luxury international tours, crafted for you</li>
+              <li id="t2">Your gateway to extraordinary journeys</li>
+              <li id="t3">Explore the world — hassle-free & stylish</li>
+            </ol>
+            <div style="margin-top:8px">
+              <label style="font-size:13px;color:var(--muted)">Choose tagline:</label>
+              <select id="tagSelect" onchange="applyTag()" style="margin-left:8px;padding:6px;border-radius:8px;background:transparent;color:inherit;border:1px solid rgba(255,255,255,0.04)">
+                <option value="Your gateway to extraordinary journeys">Your gateway to extraordinary journeys</option>
+                <option value="Luxury international tours, crafted for you">Luxury international tours, crafted for you</option>
+                <option value="Explore the world — hassle-free & stylish">Explore the world — hassle-free & stylish</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Share</h3>
+          <p class="muted">Quick links to share with clients.</p>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="outline" onclick="copyLink()">Copy page link</button>
+            <a class="outline" href="mailto:theagniholidays@gmail.com">Email</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="fade">© <span id="year"></span> The Agni Holidays — Based in Delhi. All rights reserved.</footer>
+  </div>
+
+  <!-- Inline SVGs held in JS for download/preview -->
+  <script>
+    const logos = {
+      1:`<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 240\" width=\"240\" height=\"240\">\n  <defs>\n    <linearGradient id=\"gA\" x1=\"0\" x2=\"1\">\n      <stop offset=\"0\" stop-color=\"#ff9a3c\"/>\n      <stop offset=\"1\" stop-color=\"#d35400\"/>\n    </linearGradient>\n  </defs>\n  <rect width=\"240\" height=\"240\" rx=\"36\" fill=\"#071024\"/>\n  <g transform=\"translate(20,20)\">\n    <path d=\"M80 12c-12 16-36 24-48 44-12 20-4 48 16 68s56 20 76 0 28-48 12-72S96 0 80 12z\" fill=\"url(#gA)\"/>\n    <text x=\"50%\" y=\"196\" font-family=\"Verdana, sans-serif\" font-size=\"22\" fill=\"#fff\" text-anchor=\"middle\">AGNI</text>\n  </g>\n</svg>`,
+
+      2:`<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 240\" width=\"240\" height=\"240\">\n  <defs>\n    <linearGradient id=\"gB\" x1=\"0\" x2=\"1\">\n      <stop offset=\"0\" stop-color=\"#ffd07a\"/>\n      <stop offset=\"1\" stop-color=\"#ff7a00\"/>\n    </linearGradient>\n  </defs>\n  <rect width=\"240\" height=\"240\" rx=\"24\" fill=\"#071024\"/>\n  <g transform=\"translate(16,18)\">\n    <circle cx=\"84\" cy=\"84\" r=\"66\" fill=\"url(#gB)\" opacity=\"0.12\"/>\n    <path d=\"M40 120c18-34 58-28 80-6s24 40 0 56-60 8-80-20z\" fill=\"url(#gB)\"/>\n    <text x=\"50%\" y=\"196\" font-family=\"Georgia, serif\" font-size=\"20\" fill=\"#fff\" text-anchor=\"middle\">AGNI</text>\n  </g>\n</svg>`
+    }
+
+    function setLogo(n){
+      const wrap = document.getElementById('logoPreview');
+      wrap.innerHTML = logos[n];
+      // set download link
+      const blob = new Blob([logos[n]], {type:'image/svg+xml'});
+      const url = URL.createObjectURL(blob);
+      const dl = document.getElementById('downloadLogo');
+      dl.href = url;
+      dl.download = n===1? 'agni-logo-option1.svg':'agni-logo-option2.svg';
+    }
+
+    function applyTag(){
+      const t = document.getElementById('tagSelect').value;
+      document.getElementById('mainTag').textContent = t;
+    }
+
+    function copyLink(){
+      navigator.clipboard.writeText(location.href).then(()=>{
+        alert('Page link copied to clipboard');
+      });
+    }
+
+    // initial setup
+    document.getElementById('year').textContent = new Date().getFullYear();
+    setLogo(1);
+  </script>
+</body>
+</html>
+
+
+Ho gaya — maine HTML single-file bana diya hai: The-agni-holidays (file saved to the canvas). ✅
+
+Kya usme kya kuch shamil hai (short):
+
+Single index.html file (responsive) with ready content for The Agni Holidays (based in Delhi).
+
+Tagline options included (default: Your gateway to extraordinary journeys). Tum select kar ke hero mein change kar sakte ho.
+
+Services: Thailand, Dubai, Bali, Visa Assistance, Hotel Booking (as requested).
+
+Contact: WhatsApp +91 8595335136 (WhatsApp link) and email theagniholidays@gmail.com.
+
+Two stylistic SVG logo options embedded and available for preview/download inside the page.
+
+Small interactive JS to switch logos, change tagline, and download SVG.
+
+
+Aage kya karna hai (do quick options):
+
+1. Open locally (fastest) — download the HTML from the canvas (open the file in the canvas, copy the content into a file named index.html on your phone/computer), then open it in browser. It will work offline.
+
+
+2. Publish on GitHub Pages (free) — steps:
+
+Create a GitHub account (if you don't have one).
+
+Create a new repository (name it e.g. the-agni-holidays).
+
+Add a file named index.html with the canvas content and commit.
+
+In repo Settings → Pages, choose main branch and / (root) then Save. Your site will be published at https://<username>.github.io/the-agni-holidays/ within a few minutes.
+
+
+
+3. Send to me if you want me to tweak — fonts, colors, exact tagline, phone formatting, or add more pages (it’s easy to expand). If you want different color theme or a 1-page pricing table, I can update it here.
+
+
+
+Agar chaho toh main abhi page ka ZIP bana ke de sakta hoon ya GitHub publish ke liye ready README bhi likh doon. Batao kaunsa chahiye — main seedha yahin aage update kar dunga.
